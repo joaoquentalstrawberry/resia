@@ -294,18 +294,3 @@ overflow-x:scroll;
 }
 
 </style>
-  
-<script>
-var Webflow = Webflow || [];
-Webflow.push(function() {
-  var l = $('#portfolio-slider .w-slider-arrow-left');
-  var r = $('#portfolio-slider .w-slider-arrow-right');
-  $('#portfolio-slider')
-    .on('click', '#back-arrow', function() {
-      l.trigger('tap');
-    })
-    .on('click', '#next-arrow', function() {
-      r.trigger('tap');
-    });
-});
-</script>
