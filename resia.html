@@ -298,8 +298,8 @@ overflow-x:scroll;
   <script>
 var Webflow = Webflow || [];
 Webflow.push(function() {
-  var l = $('#portfolio-slider .w-slider-arrow-left');
-  var r = $('#portfolio-slider .w-slider-arrow-right');
+  var l = $('#portfolio-slider .slide-arrow.next.w-inline-block');
+  var r = $('#portfolio-slider .slide-arrow.back.w-inline-block');
   $('#portfolio-slider')
     .on('click', '#back-arrow', function() {
       l.trigger('tap');
