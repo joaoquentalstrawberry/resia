@@ -295,4 +295,17 @@ overflow-x:scroll;
 
 </style>
   
-  
+  <script>
+var Webflow = Webflow || [];
+Webflow.push(function() {
+  var l = $('#portfolio-slider .w-slider-arrow-left');
+  var r = $('#portfolio-slider .w-slider-arrow-right');
+  $('#portfolio-slider')
+    .on('click', 'a#back-arrow', function() {
+      l.trigger('tap');
+    })
+    .on('click', 'a#next-arrow', function() {
+      r.trigger('tap');
+    });
+});
+</script>
