@@ -301,10 +301,10 @@ Webflow.push(function() {
   var l = $('#portfolio-slider .w-slider-arrow-left');
   var r = $('#portfolio-slider .w-slider-arrow-right');
   $('#portfolio-slider')
-    .on('click', '.slide-arrow.back', function() {
+    .on('click', '#back-arrow', function() {
       l.trigger('tap');
     })
-    .on('click', '.slide-arrow.next', function() {
+    .on('click', '#next-arrow', function() {
       r.trigger('tap');
     });
 });
